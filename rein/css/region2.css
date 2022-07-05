@@ -1,0 +1,47 @@
+#gnavi {
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+}
+
+    #gnavi > li {
+        display: block;
+        position: relative;
+        float: left;
+        background-color: #808080;
+        color: #ffffff;
+    }
+
+        #gnavi > li:hover {
+            background-color: #ff6a00;
+        }
+
+        #gnavi > li > ul {
+            list-style: none;
+            display: none;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #gnavi > li:hover > ul {
+            display: block;
+            position: absolute;
+        }
+
+            #gnavi > li:hover > ul > li {
+                float: none;
+            }
+
+                #gnavi > li:hover > ul > li > a {
+                    background: #ff6a00;
+                    font-palette:dark;
+                }
+
+                    #gnavi > li:hover > ul > li > a:hover {
+                        background: #ff0000;
+                    }
+
+        #gnavi > li > ul > li > a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            white-space: nowrap;
+        }

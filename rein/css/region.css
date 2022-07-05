@@ -1,0 +1,67 @@
+.region {
+    position: absolute;
+    width: 97px;
+    right: calc(1% + 30px);
+    top: 10px;
+}
+
+    .region a span {
+        display: block;
+    }
+
+    .region .popup {
+        left: inherit;
+        right: -110px;
+        top: 26px;
+        width: 270px;
+        position: absolute;
+        visibility: hidden;
+        z-index: 5;
+        margin: 0;
+        line-height: 1.5;
+        text-align: left;
+        opacity: 0;
+        transition: visibility .2s ease, top .2s ease, bottom .2s ease, background .2s ease, margin .2s ease, opacity .2s ease;
+    }
+
+        .region .popup .inner {
+            background: transparent;
+            padding: 40px 40px 60px 40px;
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+    .region ul {
+        visibility: hidden;
+        opacity: 0;
+        margin-top: 20px;
+        padding: 0 10px;
+        background-color: #efefef;
+        box-sizing: border-box;
+        transition: visibility 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
+    }
+
+        .region ul li {
+            border-top: 1px solid #999;
+        }
+
+            .region ul li:first-child {
+                border-top: none;
+            }
+
+            .region ul li a:hover {
+                background-color: #ff6a00;
+            }
+
+
+    .region .popup .inner a {
+        color: #000000;
+        padding: 10px;
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
