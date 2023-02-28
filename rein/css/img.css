@@ -8,17 +8,17 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    background-blend-mode: darken;
-    
+    background-blend-mode: hard-light;
+    background-attachment: fixed;
     
 }
 .titl {
     color: white;  
     font-size: 60px;
     position: relative;
+    top: 10%
 }
 .logo {
-    background-color: aqua;
     height: 110px;
     justify-content: space-between;
     position: relative;
@@ -28,12 +28,14 @@ body {
     background-color: white;
     vertical-align: baseline;
     text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .scroll {
     height: 300px;
     overflow-y: scroll;
-    padding-right: 20px;
     width: 100%;
 }
 
@@ -65,7 +67,7 @@ dd {
     }
         .wrap ul li {
             width: 85%;
-            font-size: 30px;
+            font-size: 150%;
             position: relative;
             display: list-item;
         }
@@ -198,6 +200,11 @@ footer {
 .layout {
     display: flex;
     justify-content: space-between;
+}
+
+.top {
+    color: white;
+    font-size: 300%;
 }
 
 img, iframe {
